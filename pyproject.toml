@@ -1,0 +1,29 @@
+[project]
+name = "kakao-mac-mcp"
+version = "0.1.0"
+description = "macOS 카카오톡 앱을 MCP로 제어하는 로컬 브리지"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyobjc-framework-ApplicationServices",
+    "pyobjc-framework-Quartz",
+    "mcp",
+    "pydantic>=2.0",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+kakao-mac-mcp = "kakao_mac_mcp.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kakao_mac_mcp"]

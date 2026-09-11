@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# uv
+.uv/
+uv.lock
+
+# 프로젝트 설정 (민감)
+config.json
+state.db
+*.db
+*.sqlite
+*.sqlite3
+
+# 로그
+*.log
+logs/
+
+# 환경 변수 / 비밀
+.env
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 테스트
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/

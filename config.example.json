@@ -1,0 +1,19 @@
+{
+  "adapter": "macos",
+  "send_enabled": false,
+  "auto_reply_enabled": false,
+  "schedule_automation_enabled": false,
+  "rooms": [],
+  "privacy": {
+    "log_actual_room_titles": false,
+    "log_message_content": false
+  },
+  "limits": {
+    "max_messages_per_read": 50,
+    "max_send_per_minute": 5,
+    "fingerprint_retention_days": 30
+  },
+  "raise_window_on_send": false,
+  "raise_window_on_input": false,
+  "activation_timeout_ms": 100
+}
